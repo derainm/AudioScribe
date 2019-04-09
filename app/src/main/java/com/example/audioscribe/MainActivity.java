@@ -123,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onNewIntent(Intent i)
     {
+        //récupération de l'adresse ip
         IpAdresse= i.getStringExtra("Ceci_est_ma_valeur").toString();
         TextView t = (TextView)findViewById(R.id.textTv);
         t.setText(IpAdresse.toString());
